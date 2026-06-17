@@ -192,8 +192,8 @@ def profile():
 
 # Load Models Safely
 try:
-    master_model = joblib.load('models/final_master_ensemble.pkl')
-    scaler = joblib.load('models/minmax_scaler.pkl')
+    master_model = joblib.load('final_master_ensemble.pkl')
+    scaler = joblib.load('minmax_scaler.pkl')
     print("✅ Models loaded successfully!")
 except Exception as e:
     print(f"❌ Error loading models: {e}")
